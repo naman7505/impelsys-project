@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    let oper;
+    let val1;
+    let val2;
+    
+    function setOper(op)
+    {
+        //alert('test');
+       oper=op;
+       //console.log(oper)
+    }
+    function calculate()
+    {
+      // alert('test');
+            let v1=document.getElementById("t1").value;
+            let v2=document.getElementById("t2").value; 
+            console.log(typeof v1) ;
+            if(oper=="+")
+               {
+                   res1=Number(v1)+Number(v2);
+                   console.log(res1);
+                   document.getElementById("result").value=res1;
+               }
+            if(oper=="-")
+               {
+                   res1=Number(v1)-Number(v2);
+                   console.log(res1);
+                   document.getElementById("result").value=res1;
+               }
+            if(oper=="/")
+               {
+                   res1=Number(v1)/Number(v2);
+                   console.log(res1);
+                   document.getElementById("result").value=res1;
+               }
+       
+    }
+   
+    </script>
+</head>
+<body>
+    
+   
+        <form method="" action="">
+          Val1:<input type=text id="t1" placeholder="enter first value here" size=10>
+          Val2:<input type=text id="t2" placeholder="enter first value here" size=10>
+          Val2:<input type=text id="result" placeholder="enter first value here" size=10>
+          <input type="button" value="+" onclick="setOper(this.value)">
+          <input type="button" value="-" onclick="setOper(this.value)">
+          <input type="button" value="/" onclick="setOper(this.value)">
+          <input type="button" value="=" onclick="calculate()">
+         
+        </form>
+        
+        </body>
+        </html>
+    

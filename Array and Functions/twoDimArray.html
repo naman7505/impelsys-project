@@ -1,0 +1,27 @@
+<html>
+<script type="text/javascript">
+let empDetails = [
+  [1001,"John","IT",12000 ],
+  [1002,"Tom","IT",13000],
+  [1003,"Rohit","HR", 15000]
+];
+console.log(empDetails);
+addBonus(empDetails,3450,"IT");
+console.log(empDetails);
+
+function addHonour(name,gender)
+{
+    if(gender.localeCompare("male"))
+       name="Mr."+name;
+    else if(gender.localeCompare("female"))
+       name="Ms."+name;
+    console.log(name,typeof name)
+
+}
+console.log(name,typeof name);
+addHonour(name,"male");
+console.log(name,typeof name);
+
+
+</script>
+</html>

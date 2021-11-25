@@ -1,0 +1,45 @@
+<html>
+<script type="text/javascript">
+/*
+document.write(a+"<br");
+document.write('Thank You');
+//var a=10;   // Change to Let
+
+*/
+function run() {
+  var x = 10;
+  let y = "Two"; 
+  //console.log(foo, bar); // Foo Bar
+  {
+    var z = "Three"
+    let w= "Four";
+    let x=100; // 101,101,101,10
+              // change to var 101,101,101,101  
+    {
+        {
+            let y=10;
+            x++;
+            console.log(x);
+        }
+        console.log(x);
+    }
+    console.log(x);
+    //console.log(moo, baz); // Mooo Bazz
+  }
+  console.log(x);
+  //console.log(moo); // Mooo
+  //console.log(baz); // ReferenceError
+  
+}
+run();
+function show()
+{
+     a="Hello";  // Global variable
+}
+show();
+
+</script>
+
+</html>
+
+

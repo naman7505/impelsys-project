@@ -1,0 +1,23 @@
+<html>
+<script type="text/javascript">
+// Passing array as argument and returning also array to calling environment. 
+function inArray(array1)
+{
+    let z=0;
+    let newArray=[];    // Not changin original one , vreating new and returning
+ for(let i=0;i<array1.length;i++)
+    {
+     newArray.push(array1[i]+5);
+    }
+ return newArray;
+}
+
+ let arr1=["JAVA",23,34,45];
+ console.log(typeof arr1[0]); 
+ let ele1=arr1[0];
+ 
+ let chArray=inArray(arr1);
+ console.log(arr1); 
+ console.log("New Array",chArray); 
+</script>
+</html>
