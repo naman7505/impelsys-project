@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function func()
+            {
+            txt=document.getElementById("t").value;
+            document.getElementById("result").innerHTML=10-txt.length;
+            }
+        </script>
+
+    </head>
+    <body align=center>
+        <form name=f1 method=get action="">
+            Enter text: <input type="text" name="text" id="t" vlue="" size=20  onmouseout="func()">
+
+        </form>
+
+        <p>No. of character left:<span id="result"></span></p>
+
+    </body>
+</html>
