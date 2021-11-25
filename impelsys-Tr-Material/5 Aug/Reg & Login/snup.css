@@ -1,0 +1,27 @@
+h1{
+color: darkorange;
+}
+
+input:hover {
+  background-color:darkgrey;
+  border-radius:10px 10px 10px 10px;
+  color:#8B0000
+  padding:5px;
+}
+
+input{
+color: #A70808;
+border:1.5px solid #000000;
+margin-top:10px;
+background-color:#E3C8E6 ;
+text-align: center;
+font-size: 20px;
+
+}
+
+fieldset{
+  width: 1300px;
+  height: 650px;
+  color: darkred;
+  background-color: lightgrey;
+}

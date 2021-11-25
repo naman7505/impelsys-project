@@ -1,0 +1,9 @@
+h1{
+color: #FFA500;
+font-size: 30px;
+}
+
+
+img:hover{
+ border-radius:50px 50px 50px 50px;
+}
